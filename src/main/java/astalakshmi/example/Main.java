@@ -11,6 +11,8 @@ public class Main {
         services.add(new Service.WinterTireChange(1, "Winter Tire Change", 1000, 200, 4));
 
         services.add(new Service.WinterTireChange.SummerTireChange(2, "Summer Tire Change", 1200, 200, 4));
+       // Service reference of service class to access the nested classes
+        // Displaying service details
         for (Service service : services) {
             System.out.println("Service: " + service.getName() + ", Price: " + service.CalculateServicePrice());
 
