@@ -43,7 +43,7 @@ abstract class Service {
         public int CalculateServicePrice() {
             return (int) (getBasePrice() + (numberOfTires * 15) + (storagefee));
         }
-
+    }
         public static class SummerTireChange extends Service {
             private int discount = 200;
             private int numberOfTires = 4;
@@ -60,6 +60,6 @@ abstract class Service {
             }
         }
     }
-}
+
 
 
